@@ -1,11 +1,9 @@
-import { useApp } from '@micro-test/utils';
-
 export function Index() {
-  const { state } = useApp();
-
   return (
-    <div className="flex flex-col px-10 pb-10 pt-16">
-      <h1 className="text-4xl font-bold">{state.message}</h1>
+    <div className="flex flex-col pt-16">
+      <div className="px-10 pb-10">
+        <h1 className="text-4xl font-bold text-blue-600">Micro2 Index Page</h1>
+      </div>
     </div>
   );
 }

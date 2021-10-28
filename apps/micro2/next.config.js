@@ -5,9 +5,16 @@ const withNx = require('@nrwl/next/plugins/with-nx');
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
+  assetPrefix: 'micro2-assets',
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: 'http://localhost:6600',
+      },
+    ];
+  },
   nx: {
-    // Set this to true if you would like to to use SVGR
-    // See: https://github.com/gregberge/svgr
     svgr: false,
   },
 };

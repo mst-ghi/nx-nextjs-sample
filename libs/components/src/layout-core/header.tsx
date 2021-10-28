@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export interface HeaderProps {}
 
 export function Header(props: HeaderProps) {
@@ -10,16 +8,18 @@ export function Header(props: HeaderProps) {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <Link href={'/'}>
-                  <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
-                    Home
-                  </a>
-                </Link>
-                <Link href={'/blog'}>
-                  <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
-                    Blog
-                  </a>
-                </Link>
+                <a
+                  href="/"
+                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Micro1
+                </a>
+                <a
+                  href="/micro2"
+                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Micro2
+                </a>
               </div>
             </div>
           </div>
