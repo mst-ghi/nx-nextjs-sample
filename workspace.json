@@ -55,8 +55,7 @@
           "options": {
             "buildTarget": "micro1:build",
             "dev": true,
-            "port": 6600,
-            "proxyConfig": "apps/micro1/proxy.conf.json"
+            "port": 6600
           },
           "configurations": {
             "production": {
@@ -101,8 +100,7 @@
           "options": {
             "buildTarget": "micro2:build",
             "dev": true,
-            "port": 6601,
-            "proxyConfig": "apps/micro2/proxy.conf.json"
+            "port": 6601
           },
           "configurations": {
             "production": {

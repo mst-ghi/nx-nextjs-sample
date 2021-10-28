@@ -6,18 +6,9 @@ const withNx = require('@nrwl/next/plugins/with-nx');
  **/
 const nextConfig = {
   assetPrefix: 'micro1-assets',
-  async rewrites() {
-    return [
-      {
-        source: '/micro2',
-        destination: 'http://localhost:6601',
-      },
-    ];
-  },
   nx: {
     svgr: false,
   },
 };
 
-// module.exports = withNx(nextConfig);
-module.exports = nextConfig;
+module.exports = withNx(nextConfig);

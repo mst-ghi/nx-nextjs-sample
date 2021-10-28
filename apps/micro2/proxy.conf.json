@@ -1,9 +1,0 @@
-{
-  "/micro2-assets": {
-    "target": "http://localhost:6601",
-    "pathRewrite": {
-      "^/micro2-assets/_next": "/_next"
-    },
-    "secure": false
-  }
-}
