@@ -1656,6 +1656,13 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@module-federation/nextjs-mf@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@module-federation/nextjs-mf/-/nextjs-mf-2.3.1.tgz#d8029e1f225c7719370ec564c6937271a74a12bc"
+  integrity sha512-mWeVr/kb0Ip0zgKXO9e/ub5PEb9wNFNFzy06+wDhXCtz1YGaPlTiyjnvpwZbAwD1ha8B3EcHjKYEB3ic/0ogKQ==
+  dependencies:
+    webpack-federated-stats-plugin "2.0.5"
+
 "@napi-rs/triples@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@napi-rs/triples/-/triples-1.0.3.tgz#76d6d0c3f4d16013c61e45dfca5ff1e6c31ae53c"
@@ -14271,6 +14278,11 @@ webpack-dev-server@3.11.2:
     webpack-log "^2.0.0"
     ws "^6.2.1"
     yargs "^13.3.2"
+
+webpack-federated-stats-plugin@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/webpack-federated-stats-plugin/-/webpack-federated-stats-plugin-2.0.5.tgz#ea184231f2cc380082af54fef5d1a9b05255b002"
+  integrity sha512-Ji+RVg3+0joPAXqqv8F9wD4lyq8ibxqYu3vzp8gaBOy7jdHcnn8egZ0KV08S5KbBlxP1n7jzq0kSN+M5uMaWyA==
 
 webpack-log@^2.0.0:
   version "2.0.0"
