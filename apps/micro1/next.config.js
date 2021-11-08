@@ -1,3 +1,5 @@
+const withNx = require('@nrwl/next/plugins/with-nx');
+
 const nextConfig = {
   webpack(config, options) {
     config.plugins.push(
@@ -8,9 +10,13 @@ const nextConfig = {
         },
         shared: {
           react: {
-            // Notice shared ARE eager here.
             eager: true,
-            // singleton: true, react@17
+            singleton: true,
+            requiredVersion: false,
+          },
+          'react-dom': {
+            eager: true,
+            singleton: true,
             requiredVersion: false,
           },
         },
@@ -26,4 +32,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNx(nextConfig);

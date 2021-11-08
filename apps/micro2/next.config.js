@@ -1,3 +1,4 @@
+const withNx = require('@nrwl/next/plugins/with-nx');
 const { withFederatedSidecar } = require('@module-federation/nextjs-mf');
 
 const nextConfig = withFederatedSidecar({
@@ -8,8 +9,14 @@ const nextConfig = withFederatedSidecar({
   },
   shared: {
     react: {
-      requiredVersion: false,
+      eager: true,
       singleton: true,
+      requiredVersion: false,
+    },
+    'react-dom': {
+      eager: true,
+      singleton: true,
+      requiredVersion: false,
     },
   },
 })({
@@ -17,4 +24,4 @@ const nextConfig = withFederatedSidecar({
   assetPrefix: 'micro2-assets',
 });
 
-module.exports = nextConfig;
+module.exports = withNx(nextConfig);

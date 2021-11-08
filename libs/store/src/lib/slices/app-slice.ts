@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface AppStateProps {
-  appIsInitialized: boolean;
-  message: string;
+  appIsInitialized?: boolean;
+  message?: string;
 }
 
 const initialState = {

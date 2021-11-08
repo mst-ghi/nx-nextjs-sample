@@ -16,6 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@micro-test/components": ["libs/components/src/index.ts"],
+      "@micro-test/contracts": ["libs/contracts/src/index.ts"],
+      "@micro-test/dynamics": ["libs/dynamics/src/index.ts"],
       "@micro-test/store": ["libs/store/src/index.ts"],
       "@micro-test/utils": ["libs/utils/src/index.ts"]
     }

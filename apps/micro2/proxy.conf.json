@@ -2,14 +2,14 @@
   "/micro2-assets/_next": {
     "target": "http://localhost:6601",
     "pathRewrite": {
-      "^/micro1-assets/_next": "/_next"
+      "^/micro2-assets/_next": "/_next"
     },
     "secure": false
   },
   "/micro1-assets/_next": {
     "target": "http://localhost:6600",
     "pathRewrite": {
-      "^/micro2-assets/_next": "/_next"
+      "^/micro1-assets/_next": "/_next"
     },
     "secure": false
   }

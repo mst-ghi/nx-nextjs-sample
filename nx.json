@@ -30,6 +30,12 @@
     "components": {
       "tags": []
     },
+    "contracts": {
+      "tags": ["contracts"]
+    },
+    "dynamics": {
+      "tags": ["dynamics"]
+    },
     "micro1": {
       "tags": ["micro1"]
     },

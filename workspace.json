@@ -34,6 +34,88 @@
         }
       }
     },
+    "contracts": {
+      "root": "libs/contracts",
+      "sourceRoot": "libs/contracts/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/contracts",
+            "tsConfig": "libs/contracts/tsconfig.lib.json",
+            "project": "libs/contracts/package.json",
+            "entryFile": "libs/contracts/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/contracts/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/contracts/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/contracts"],
+          "options": {
+            "jestConfig": "libs/contracts/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "dynamics": {
+      "root": "libs/dynamics",
+      "sourceRoot": "libs/dynamics/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/dynamics",
+            "tsConfig": "libs/dynamics/tsconfig.lib.json",
+            "project": "libs/dynamics/package.json",
+            "entryFile": "libs/dynamics/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/dynamics/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/dynamics/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/dynamics"],
+          "options": {
+            "jestConfig": "libs/dynamics/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "micro1": {
       "root": "apps/micro1",
       "sourceRoot": "apps/micro1",

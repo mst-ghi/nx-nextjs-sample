@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.0",
+    "@module-federation/fmr": "^0.0.7",
     "@nrwl/cli": "12.10.0",
     "@nrwl/cypress": "12.10.0",
     "@nrwl/eslint-plugin-nx": "12.10.0",
